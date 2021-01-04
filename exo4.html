@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Première page</title>
+    </head>
+    <body>
+        <form>
+            <label>Nom : </label>
+            <input type="text" id="lastname">
+            <label>Prénom : </label>
+            <input type="text" id="firstname">
+            <label>Ville : </label>
+            <input type="text" id="city">
+            <input type="submit" value="Submit" onclick="fonction()"> 
+        </form>
+        <script>
+            function fonction(){
+                var lastName = document.getElementById("lastname").value;
+            var firstName =document.getElementById("firstname").value;
+            var city = document.getElementById("city").value;
+
+            window.alert("Nom : "+ lastName + "\nPrénom : "+ firstName + "\nVille : " + city);
+            }
+            
+        </script>
+    </body>
+</html>
